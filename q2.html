@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LabFourQ2</title>
+</head>
+<div>
+  <input type="text" id="userInput" placeholder="Enter a number">
+  <button onclick="checkInput()">Check</button>
+</div>
+
+<script>
+  document.getElementById("userInput").style.fontSize = "65px";
+  document.getElementById("userInput").style.textAlign = "center";
+  document.querySelector("button").style.fontSize = "65px";
+  document.querySelector("button").style.textAlign = "center";
+
+  function checkInput() {
+    const input = document.getElementById("userInput").value;
+    if (isNaN(input)) {
+      alert("Please insert a number!");
+    } else if (input < 10) {
+      alert("The number is lower than 10");
+    } else {
+      alert("The number is higher than 10");
+    }
+  }
+</script>
+
+<body>
+</body>
+</html>
